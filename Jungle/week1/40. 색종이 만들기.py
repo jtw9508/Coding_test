@@ -6,6 +6,7 @@ for i in range(size):
     board.append(line)
 white = 0
 blue = 0
+
 def is_onecolor(board, start_row, start_col, size):
     first = board[start_row][start_col]
     for i in range(start_row, start_row+size):

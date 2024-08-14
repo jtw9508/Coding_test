@@ -10,6 +10,7 @@ def blackjack(cnt,start,temp, best_sum):
         return
     
     for i in range(start, N):
+        print(temp)
         blackjack(cnt+1,i+1, temp + cards[i],best_sum)
 blackjack(0,0,0,best_sum)
 print(answer)

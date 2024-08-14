@@ -12,7 +12,7 @@ def calculate_sum(list):
 
 def search_list(list,list_search,n):
     global answer
-    if len(list) == n: ##n개를 다 선택한 경우 합을 구하기
+    if len(list) == n: ##n개를 다 선택한 경우 합을 구하기(base case)
         temp = calculate_sum(list)
         answer = max(answer, temp)
     else:

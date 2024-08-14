@@ -18,12 +18,11 @@ def calculate(path):
         else:
             temp += costs[cir_path[i-1]][cir_path[i]]
     answer = min(answer, temp)
-    print(answer)
+
     return
 
 def circulate(path,search):
     if len(path) == board_size: ## 경로 후보 경우의 수를 찾았을 경우 경로 비용 계산
-        print(path)
         calculate(path)
         return
     else:
@@ -32,3 +31,5 @@ def circulate(path,search):
 
 circulate([],city)
 print(answer)
+
+##https://www.acmicpc.net/source/54591458 추후에 visited이용해서 풀어보기

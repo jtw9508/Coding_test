@@ -11,8 +11,8 @@ for i in range(len(operator)):
 operate_complete = set()
 
 ##변수 초기화
-max_num = -9999999999
-min_num = 9999999999
+max_num = -999999999999
+min_num = 999999999999
 
 #연산해서 min,max 갱신
 def calculate(operators):

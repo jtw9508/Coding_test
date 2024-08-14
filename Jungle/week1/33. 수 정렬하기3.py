@@ -8,7 +8,7 @@ for i in range(N):
         num_set[n] = 1
     else:
         num_set[n] += 1
-print(num_set.keys())
+
 keys = sorted(list(num_set.keys()))
 
 for key in keys:
